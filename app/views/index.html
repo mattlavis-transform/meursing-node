@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Look up Meursing code
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Look up Meursing code</h1>
+      <p>Use this tool to look up the additional code (Meursing code) for import or export
+      of goods containing certain types of milk and sugars.</p>
+
+      {{ govukButton({
+        text: "Start now",
+        href: "starch-glucose",
+        isStartButton: true
+    }) }}
+    </div>
+  </div>
+
+{% endblock %}
