@@ -4,6 +4,16 @@
   Look up Meursing code - How much milk protein does the product contain?
 {% endblock %}
 
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+      tag: {
+        text: "beta"
+      },
+      html: 'This is a Beta service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+    }) }}
+{% endblock %}
+
 {% block content %}
   {% if error %}
     {% set error_class = " govuk-form-group--error" %}
